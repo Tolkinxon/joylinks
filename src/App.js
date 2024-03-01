@@ -3,7 +3,7 @@ import { InputSide } from './components/inputSide'
 
 
 export default function App() {
-  const [amount, setAmount] = useState(10)
+  const [amount, setAmount] = useState(1)
   const [data, setData] = useState()
   const [currentCurrency, setCurrentCurrency] = useState('GBP')
   const [changibleCurrency, setChangibleCurrency] = useState('USD')
@@ -18,8 +18,7 @@ export default function App() {
       console.log(data);
       setData(data.rates[`${changibleCurrency}`])
     });
-
-    console.log(amount, currentCurrency, changibleCurrency);
+console.log(currentCurrency, changibleCurrency);
   }, [amount, currentCurrency, changibleCurrency])
   
 
@@ -28,7 +27,7 @@ export default function App() {
     <>
       <InputSide setAmount={setAmount} setCurrentCurrency={setCurrentCurrency} setChangibleCurrency={setChangibleCurrency} amount={amount}/>
       <div>
-        {data}
+        {`${data}         ${changibleCurrency}`}
       </div>
     </>
   )
