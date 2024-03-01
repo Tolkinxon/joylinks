@@ -3,23 +3,36 @@ import { InputSide } from './components/inputSide'
 
 
 export default function App() {
+  const [isLoading, setIsLoading] = useState(true)
   const [amount, setAmount] = useState(1)
   const [data, setData] = useState()
   const [currentCurrency, setCurrentCurrency] = useState('GBP')
   const [changibleCurrency, setChangibleCurrency] = useState('USD')
 
 
-  useEffect(() => {
-    const host = 'api.frankfurter.app';
+useEffect(() => {
+const host = 'api.frankfurter.app';
+
+async function takingData () {
+   try {
+    const res = await fetch(`https://${host}/latest?amount=${amount}&from=${currentCurrency}&to=${changibleCurrency}`)
+    const data = await res.json()
+    setData(data.rates[`${changibleCurrency}`])
+   }
+   catch(error){
+    console.log(error.message);
+   }
+   finally {
+    setIsLoading(false) 
+   }
+
     
-  fetch(`https://${host}/latest?amount=${amount}&from=${currentCurrency}&to=${changibleCurrency}`)
-    .then(resp => resp.json())
-    .then((data) => {
-      console.log(data);
-      setData(data.rates[`${changibleCurrency}`])
-    });
-console.log(currentCurrency, changibleCurrency);
-  }, [amount, currentCurrency, changibleCurrency])
+}
+
+takingData()
+    
+
+}, [amount, currentCurrency, changibleCurrency])
   
 
   // USD INR EUR CAD 
