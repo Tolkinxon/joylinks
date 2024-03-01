@@ -4,6 +4,7 @@ import { InputSide } from './components/inputSide'
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true)
+  const [problemShowing, setProplemShowing] = useState(false)
   const [amount, setAmount] = useState(1)
   const [data, setData] = useState()
   const [currentCurrency, setCurrentCurrency] = useState('GBP')
@@ -16,11 +17,19 @@ const host = 'api.frankfurter.app';
 async function takingData () {
    try {
     const res = await fetch(`https://${host}/latest?amount=${amount}&from=${currentCurrency}&to=${changibleCurrency}`)
-    const data = await res.json()
-    setData(data.rates[`${changibleCurrency}`])
+    if(res.ok){
+      const data = await res.json()
+      console.log(data);
+      setData(data.rates[`${changibleCurrency}`])
+    } 
+    else {
+      throw new Error("Something went wrong....") 
+    }
+
    }
    catch(error){
-    console.log(error.message);
+    console.log(error);
+    setProplemShowing(error.message)
    }
    finally {
     setIsLoading(false) 
@@ -37,11 +46,18 @@ takingData()
 
   // USD INR EUR CAD 
   return (
-    <>
-      <InputSide setAmount={setAmount} setCurrentCurrency={setCurrentCurrency} setChangibleCurrency={setChangibleCurrency} amount={amount}/>
-      <div>
-        {`${data}         ${changibleCurrency}`}
-      </div>
-    </>
+    <div>
+      <h1>Converting currency</h1>
+      { isLoading ? "Data is loading...": problemShowing ? 'Something went wrong please check and try again...' :     
+        <>
+            <InputSide setAmount={setAmount} setCurrentCurrency={setCurrentCurrency} setChangibleCurrency={setChangibleCurrency} amount={amount}/>
+            <div>
+              {`${data} ${changibleCurrency}`}
+            </div>    
+        </>
+
+
+        }
+    </div>
   )
 }
