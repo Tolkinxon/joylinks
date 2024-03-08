@@ -5,7 +5,7 @@ import myContext from './components/context'
 export default function App () {
   return(
     <>
-      <myContext.Provider>
+      <myContext.Provider value={{item: 'hello'}}>
           <div>hello world</div>
           <Home />
       </myContext.Provider>
