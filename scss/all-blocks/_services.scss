@@ -1,0 +1,48 @@
+.services {
+    margin-bottom: 134px;
+
+    &__heading {
+        font-family:'Fira Sans', sans-serif;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 48px;
+        text-align: left;
+        color: white;
+        margin-bottom: 40px;
+    }
+
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+    &__item-text:nth-child(1){
+        margin-bottom: 6px;
+    }
+
+
+    &__item-text {
+        max-width: 237px;
+        width: 100%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 17.58px;
+        text-align: left;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+
+    &__item-heading {
+        font-family: 'Roboto', sans-serif;
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 26.95px;
+        text-align: left;
+        color: white;
+        margin-bottom: 17px;
+    }
+}
