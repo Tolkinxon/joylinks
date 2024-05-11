@@ -4,17 +4,32 @@
 
 html {
   height: 100%;
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
   background-color: #0f1144;
   height: 100%;
+  padding: 0px;
+  margin: 0px;
   display: flex;
   flex-direction: column;
 }
 
 .main {
   flex-grow: 1;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul, ol {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .container {
@@ -95,4 +110,104 @@ body {
   font-style: normal;
   font-weight: 500;
   src: url("../fonts/rubik-v28-latin-500.woff2") format("woff2");
+}
+.header {
+  margin-top: 30px;
+  margin-bottom: 116px;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__img {
+  width: 136px;
+  height: 41px;
+}
+.header__list {
+  max-width: 400px;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  text-align: left;
+  color: #B5B5B5;
+}
+.header__link {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 17.58px;
+  text-align: left;
+  color: white;
+  padding: 9px 14px;
+  background-color: #f2994a;
+  border-radius: 2px;
+}
+
+.hero {
+  padding-top: 44px;
+  padding-bottom: 222px;
+  background-image: url("./../images/hero-background.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 365px) 0px;
+  background-size: 723px 580px;
+}
+.hero__left-side {
+  max-width: 580px;
+  width: 100%;
+}
+.hero__heading {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 37px;
+  font-weight: 700;
+  line-height: 44.4px;
+  text-align: left;
+  color: #99EFD0;
+  margin-bottom: 40px;
+}
+.hero__heading span {
+  color: #f2994a;
+}
+.hero__text {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.6px;
+  text-align: left;
+  color: #8476aa;
+  margin-bottom: 40px;
+}
+.hero__button-wrapper {
+  max-width: 252px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero__button-logo {
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+}
+.hero__button {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 17.58px;
+  text-align: left;
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 9px 17px;
 }/*# sourceMappingURL=main.css.map */

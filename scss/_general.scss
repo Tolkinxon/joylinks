@@ -4,17 +4,32 @@
 
 html{
     height: 100%;
+    padding: 0px;
+    margin: 0px;
 }
 
 body {
     background-color: #0f1144;
     height: 100%;
+    padding: 0px;
+    margin: 0px;
     display: flex;
     flex-direction: column;
 }
 
 .main {
     flex-grow: 1;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul, ol {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 .container {
