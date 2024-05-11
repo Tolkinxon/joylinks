@@ -1,0 +1,46 @@
+.next-project {
+    background-image: url('./../../images/next-project-background.svg');
+    background-repeat: no-repeat;
+    background-position: calc(50%) 60px;
+    margin-bottom: 130px;
+
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 550px;
+    }
+
+    &__heading {
+        max-width: 820px;
+        width: 100%;
+        font-family: 'Inter', sans-serif;
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 50px;
+        text-align: center;
+        color: #99EFD0;
+        margin-bottom: 46px;
+
+        span {
+            color: #f2994a;
+        }
+    }
+
+
+    &__link {
+        text-decoration: none;
+        font-family: 'Rubik', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-align: center;
+        color: white;
+        padding: 17px 33px;
+        border-radius: 3px;
+        background-color: #F2994A;
+        box-shadow: -11.09px 18.13px 36.65px 0px #F2994A3B;
+    }
+}

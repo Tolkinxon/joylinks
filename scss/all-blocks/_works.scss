@@ -12,9 +12,11 @@
     }
 
     &__list {
-        display: flex;
+
+        display: grid;
         justify-content: space-between;
-        flex-wrap: wrap;
+        grid-template-columns: auto auto auto;
+        gap: 50px;
     }
 
     &__item {
