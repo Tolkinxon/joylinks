@@ -5,9 +5,9 @@ import myContext from './components/context'
 export default function App () {
   return(
     <>
-      <myContext.Provider value={{item: 'hello'}}>
+      <myContext.Pgit rovider value={{item: 'hello'}}>
           <div>hello world</div>
-          <Home />
+       
       </myContext.Provider>
     </>
   )
