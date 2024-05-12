@@ -56,6 +56,20 @@ ul, ol {
   margin-left: auto;
 }
 
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 660px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .container {
+    max-width: 325px;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
 @font-face {
   font-display: swap;
   font-family: "Roboto";
@@ -226,6 +240,77 @@ ul, ol {
   background-color: transparent;
   border-radius: 5px;
   padding: 9px 17px;
+}
+@media only screen and (max-width: 768px) {
+  .hero__heading {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+  .hero__container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .hero__button-wrapper {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .hero {
+    background-position: calc(50% + 200px) 0px;
+  }
+  .hero__container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .hero__left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero__heading {
+    max-width: 400px;
+    width: 100%;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .hero__text {
+    max-width: 300px;
+    width: 100%;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .hero__button-logo {
+    width: 10px;
+    height: 10px;
+    margin-right: 4px;
+  }
+  .hero__button-wrapper {
+    max-width: 160px;
+  }
+  .hero__button {
+    font-size: 10px;
+    line-height: 15px;
+    padding: 5px 10px;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .hero {
+    background-image: none;
+  }
+}
+@media only screen and (max-width: 210px) {
+  .hero__button-wrapper {
+    gap: 10px;
+    flex-direction: column;
+  }
 }
 
 .services {
