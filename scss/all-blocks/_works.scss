@@ -1,6 +1,10 @@
 .works {
     margin-bottom: 162px;
 
+    background-image: url('./../images/works-background.svg');
+    background-repeat: no-repeat;
+    background-position: calc(50% - 583px) 97px;
+
     &__heading {
         font-family: 'Roboto', sans-serif;
         font-size: 40px;
