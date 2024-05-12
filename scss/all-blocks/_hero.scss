@@ -70,9 +70,9 @@
     }
 
     @media only screen and (max-width: 768px){
+        padding-bottom: 100px;
+
         &__heading {
-            font-size: 30px;
-            line-height: 35px;
             margin-bottom: 20px;
         }
 
@@ -89,6 +89,9 @@
      
     }
 
+    @media only screen and (max-width: 570px){
+        margin-top: 177px;
+    }
     @media only screen and (max-width: 520px){
         background-position: calc(50% + 200px) 0px;
 
@@ -106,19 +109,19 @@
         &__heading {
             max-width: 400px;
             width: 100%;
-            font-size: 17px;
-            line-height: 20px;
             text-align: center;
             margin-bottom: 15px;
+            font-size: 30px;
+            line-height: 35px;
         }
 
         &__text {
             max-width: 300px;
             width: 100%;
-            font-size: 10px;
-            line-height: 15px;
             text-align: center;
             margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 20px;
         }
 
         &__button-logo {
@@ -145,6 +148,24 @@
 
     @media only screen and (max-width: 350px){
         background-image: none; 
+
+        &__heading {
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 25px;
+            line-height: 30px;
+        }
+
+        &__text {
+            max-width: 300px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 12px;
+            line-height: 18px;
+        }
     }
 
     @media only screen and (max-width: 210px) {
