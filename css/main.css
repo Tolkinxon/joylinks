@@ -998,6 +998,7 @@ ul, ol {
   letter-spacing: 1px;
   padding: 10px;
   margin-bottom: 20px;
+  resize: none;
 }
 .form__bottom-wrapper {
   display: flex;
@@ -1117,7 +1118,7 @@ ul, ol {
     line-height: 25px;
   }
   .form__container {
-    padding: 20px 10px 20px 10px;
+    padding: 20px 15px 20px 15px;
   }
 }
 
@@ -1196,6 +1197,9 @@ ul, ol {
 .footer__body-left-messenger {
   width: 25px;
   height: 25px;
+}
+.footer__body-center-2 {
+  display: none;
 }
 .footer__body-center-heading {
   font-family: "Roboto", sans-serif;
@@ -1278,4 +1282,92 @@ ul, ol {
   letter-spacing: 0.200000003px;
   text-align: left;
   color: #8D8D8D;
+}
+@media only screen and (max-width: 1040px) {
+  .footer__body-center-1 {
+    display: none;
+  }
+  .footer__body-center-2 {
+    display: block;
+    max-width: 416px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 62px;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .footer__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    text-align: center;
+  }
+  .footer__body-left {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__body-left-text {
+    text-align: center;
+  }
+  .footer__body-left-email {
+    text-align: center;
+  }
+  .footer__body-left-messenger-wrapper {
+    max-width: 133px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .footer__body-right-heading {
+    text-align: center;
+  }
+  .footer__body-right-text {
+    text-align: center;
+  }
+  .footer__body-center-form {
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width: 416px;
+    width: 100%;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 428px) {
+  .footer {
+    background-image: none;
+  }
+  .footer__cotainer {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .footer__head {
+    display: none;
+  }
+  .footer__body-left-email, .footer__body-right-heading, .footer__body-right-text, .footer__body-left-text {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .footer__body-left-email {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .footer__body-right-text + .footer__body-right-text {
+    margin-top: 10px;
+  }
+  .footer__body-left-text + .footer__body-left-text {
+    margin-top: 12px;
+  }
+  .footer__footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .footer__footer span {
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */

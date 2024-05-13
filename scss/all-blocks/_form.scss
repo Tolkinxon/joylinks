@@ -88,6 +88,7 @@
 		letter-spacing: 1px;
 		padding: 10px;
 		margin-bottom: 20px;
+		resize: none;
 	}
 	
 	
@@ -232,7 +233,7 @@
 		}
 
 		&__container {
-			padding: 20px 10px 20px 10px;
+			padding: 20px 15px 20px 15px;
 		}
 	}
 }
