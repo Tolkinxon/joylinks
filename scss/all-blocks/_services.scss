@@ -56,8 +56,13 @@
     }
 
     @media only screen and (max-width: 1200px){
+        &__heading {
+            text-align: center;
+        }
+        
         &__list {
             grid-template-columns: auto auto;
+            justify-content: center;
             gap: 40px;
         }
     }

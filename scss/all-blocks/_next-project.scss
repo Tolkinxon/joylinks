@@ -1,5 +1,5 @@
 .next-project {
-    background-image: url('./../../images/next-project-background.svg');
+    background-image: url('./../../images/next-project-background.png');
     background-repeat: no-repeat;
     background-position: calc(50%) 60px;
     margin-bottom: 130px;
@@ -42,5 +42,61 @@
         border-radius: 3px;
         background-color: #F2994A;
         box-shadow: -11.09px 18.13px 36.65px 0px #F2994A3B;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        background-size: 800px 400px;
+        background-position: calc(50%) 150px;
+        
+        &__heading {
+            max-width: 720px;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        background-size: 700px 350px;
+       
+
+        &__heading {
+            max-width: 540px;
+            font-size: 30px;
+            line-height: 35px;
+        }
+
+        
+    }
+
+    @media only screen and (max-width: 540px) {
+        background-size: 550px 275px;
+
+        &__heading {
+            max-width: 400px;
+            font-size: 25px;
+            line-height: 30px;
+        }
+    }
+
+    @media only screen and (max-width: 375px) {
+        background-size: 450px 225px;
+        background-position: calc(50%) 90px;
+
+        &__heading {
+            max-width: 400px;
+            font-size: 20px;
+            line-height: 25px;
+            margin-bottom: 30px;
+        }
+
+        &__link {
+            font-size: 8px;
+            line-height: 12px;
+            letter-spacing: 2px;
+            padding: 10px 20px;
+        }
+    }
+
+    @media only screen and (max-width: 330px) {
+        background-size: 300px 150px;
+        background-position: calc(50%) 90px;
     }
 }
