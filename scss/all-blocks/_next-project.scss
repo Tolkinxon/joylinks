@@ -1,7 +1,7 @@
 .next-project {
     background-image: url('./../../images/next-project-background.png');
     background-repeat: no-repeat;
-    background-position: calc(50%) 60px;
+    background-position: calc(50% - 3px) 60px;
     margin-bottom: 130px;
 
 
@@ -30,6 +30,8 @@
 
 
     &__link {
+        max-width: 157px;
+        width: 100%;
         text-decoration: none;
         font-family: 'Rubik', sans-serif;
         font-size: 12px;
@@ -42,6 +44,9 @@
         border-radius: 3px;
         background-color: #F2994A;
         box-shadow: -11.09px 18.13px 36.65px 0px #F2994A3B;
+        text-wrap: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden; 
     }
 
     @media only screen and (max-width: 1000px) {
@@ -79,6 +84,9 @@
     @media only screen and (max-width: 375px) {
         background-size: 450px 225px;
         background-position: calc(50%) 90px;
+        margin: 0;
+        padding: 0;
+
 
         &__heading {
             max-width: 400px;

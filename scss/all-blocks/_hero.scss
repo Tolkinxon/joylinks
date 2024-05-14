@@ -67,45 +67,49 @@
         background-color: transparent;
         border-radius: 5px;
         padding: 9px 17px;
+        text-wrap: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden; 
+        cursor: pointer;
     }
-
+    
     @media only screen and (max-width: 768px){
         padding-bottom: 100px;
-
+        
         &__heading {
             margin-bottom: 20px;
         }
-
+        
         &__container {
             padding-left: 15px;
             padding-right: 15px;
         }
-
+        
         &__button-wrapper {
             width: 100%;
             margin-right: auto;
             margin-left: auto;
         }
-     
+        
     }
-
+    
     @media only screen and (max-width: 570px){
         margin-top: 177px;
     }
     @media only screen and (max-width: 520px){
         background-position: calc(50% + 200px) 0px;
-
+        
         &__container {
             padding-left: 5px;
             padding-right: 5px;
         }
-
+        
         &__left-side {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-
+        
         &__heading {
             max-width: 400px;
             width: 100%;
@@ -114,7 +118,7 @@
             font-size: 30px;
             line-height: 35px;
         }
-
+        
         &__text {
             max-width: 300px;
             width: 100%;
@@ -123,32 +127,33 @@
             font-size: 16px;
             line-height: 20px;
         }
-
+        
         &__button-logo {
             width: 10px;
             height: 10px;
             margin-right: 4px;
         }
-
+        
         &__button-wrapper {
-          max-width: 160px;
-
+            max-width: 160px;
+            
         }
-
+        
         &__button {
+        
             font-size: 10px;
             line-height: 15px;
             padding: 5px 10px;
             align-items: center;
         }
-
-      
-     
+        
+        
+        
     }
-
+    
     @media only screen and (max-width: 350px){
         background-image: none; 
-
+        
         &__heading {
             max-width: 400px;
             width: 100%;
@@ -157,7 +162,7 @@
             font-size: 25px;
             line-height: 30px;
         }
-
+        
         &__text {
             max-width: 300px;
             width: 100%;
@@ -167,12 +172,12 @@
             line-height: 18px;
         }
     }
-
+    
     @media only screen and (max-width: 210px) {
-            
-    &__button-wrapper {
-    gap: 10px;
-       flex-direction: column;
-    }
+        
+        &__button-wrapper {
+            gap: 10px;
+            flex-direction: column;
+        }
     }   
 }

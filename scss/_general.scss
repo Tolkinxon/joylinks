@@ -20,7 +20,7 @@ body {
 
 .leaner-background {
     position: absolute;
-    max-width: 1474px;
+    max-width: 1600px;
     width: 100%;
     height: 1000px;
     top: 0px;
@@ -56,6 +56,20 @@ ul, ol {
     margin-right: auto;
     margin-left: auto;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 @media only screen and (max-width: 768px){
     .container{

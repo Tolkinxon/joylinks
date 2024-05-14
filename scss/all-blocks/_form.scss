@@ -4,7 +4,7 @@
 
 	background-image: url('./../images/form-bacground.svg');
 	background-repeat: no-repeat;
-	background-position: calc(50% + 8px) 0px;
+	background-position: calc(50% + 10px) 0px;
 	
 	&__container {
 		max-width: 940px;
@@ -104,6 +104,7 @@
 		margin-right: 11px;
 		border-radius: 3px;
 		background: #E3E3E3;
+		cursor: pointer;
 	}
 	
 	
@@ -121,6 +122,7 @@
 		line-height: 17.58px;
 		text-align: left;
 		color: white;
+		cursor: pointer;
 	}
 	
 	&__recaptcha{
@@ -154,6 +156,10 @@
 		border-radius: 3px;
 		border: 0px;
 		outline: 0px;
+		cursor: pointer;
+		text-wrap: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden; 
 	}
 
 	@media only screen and (max-width: 1060px){
